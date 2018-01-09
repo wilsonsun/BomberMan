@@ -1,0 +1,8 @@
+PowerUpBomb
+Transform
+0 0
+Sprite
+PowerUpBomb.png
+Body
+AABB
+45 45

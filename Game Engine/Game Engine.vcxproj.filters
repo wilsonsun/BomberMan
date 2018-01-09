@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="GameObjectFactory.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Component.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Component_Controller.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Component_Sprite.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Component_Transform.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameRateController.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManagers.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Component_UpDown.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Component_Animation.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Component_Body.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>MsgSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionEvent.cpp">
+      <Filter>MsgSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ExplosionEvent.cpp">
+      <Filter>MsgSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Component_Explosion.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="DismissEvent.cpp">
+      <Filter>MsgSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Component_BombCollider.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Component_Timer.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Affine3D.cpp" />
+    <ClCompile Include="RenderManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Component_AI.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameObjectFactory.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectTypeList.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Vector2D.h" />
+    <ClInclude Include="Component.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Component_Controller.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Component_Sprite.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Component_Transform.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentList.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameRateController.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManagers.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Component_UpDown.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Component_Animation.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerState.h" />
+    <ClInclude Include="Component_Body.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>MsgSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionEvent.h">
+      <Filter>MsgSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplosionEvent.h">
+      <Filter>MsgSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Component_Explosion.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="DismissEvent.h">
+      <Filter>MsgSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Component_BombCollider.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Component_Timer.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="FireState.h" />
+    <ClInclude Include="Affine3D.h" />
+    <ClInclude Include="RenderManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Component_AI.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Game Engine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Components">
+      <UniqueIdentifier>{1b944db0-170f-4d8b-a000-ff13f6536c1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{b32a0ed2-be6e-41d2-9b94-839464361d48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{aff39d19-4512-44b4-beb2-58ba2a335e56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MsgSystem">
+      <UniqueIdentifier>{013d311d-e84e-4437-8543-ecbf268406eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Mario.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Level1.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Ben.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Jack.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Simon.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Bomb.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Fire.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Level2.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Brick_H.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Brick_V.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Brick.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Wood.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="PowerUpBomb.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="PowerUpSpeed.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="PowerUpFire.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="ControlUI.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Door.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="WinUI.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="LostUI.txt">
+      <Filter>Data</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9AD7F407-7E41-4D2C-BFEC-A3A707437956}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameEngine1</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\SDL2.0 Lib\include;$(currentDir)\GLEW\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\SDL2.0 Lib\lib\x86;$(ProjectDir)\GLEW\lib\Release\Win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glew32.lib;glew32s.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\SDL2.0 Lib\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\SDL2.0 Lib\lib\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Affine3D.cpp" />
+    <ClCompile Include="CollisionEvent.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Component_AI.cpp" />
+    <ClCompile Include="Component_Animation.cpp" />
+    <ClCompile Include="Component_Body.cpp" />
+    <ClCompile Include="Component_BombCollider.cpp" />
+    <ClCompile Include="Component_Controller.cpp" />
+    <ClCompile Include="Component_Explosion.cpp" />
+    <ClCompile Include="Component_Sprite.cpp" />
+    <ClCompile Include="Component_Timer.cpp" />
+    <ClCompile Include="Component_Transform.cpp" />
+    <ClCompile Include="Component_UpDown.cpp" />
+    <ClCompile Include="DismissEvent.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="ExplosionEvent.cpp" />
+    <ClCompile Include="FrameRateController.cpp" />
+    <ClCompile Include="GameManagers.cpp" />
+    <ClCompile Include="GameObjectFactory.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PhysicsManager.cpp" />
+    <ClCompile Include="RenderManager.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="Shape.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Affine3D.h" />
+    <ClInclude Include="CollisionEvent.h" />
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="ComponentList.h" />
+    <ClInclude Include="Component_AI.h" />
+    <ClInclude Include="Component_Animation.h" />
+    <ClInclude Include="Component_Body.h" />
+    <ClInclude Include="Component_BombCollider.h" />
+    <ClInclude Include="Component_Controller.h" />
+    <ClInclude Include="Component_Explosion.h" />
+    <ClInclude Include="Component_Sprite.h" />
+    <ClInclude Include="Component_Timer.h" />
+    <ClInclude Include="Component_Transform.h" />
+    <ClInclude Include="Component_UpDown.h" />
+    <ClInclude Include="DismissEvent.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="ExplosionEvent.h" />
+    <ClInclude Include="FireState.h" />
+    <ClInclude Include="FrameRateController.h" />
+    <ClInclude Include="GameManagers.h" />
+    <ClInclude Include="GameObjectFactory.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectTypeList.h" />
+    <ClInclude Include="GameObjectManager.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="PhysicsManager.h" />
+    <ClInclude Include="PlayerState.h" />
+    <ClInclude Include="RenderManager.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="Vector2D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Game Engine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Ben.txt" />
+    <Text Include="Bomb.txt" />
+    <Text Include="Brick.txt" />
+    <Text Include="Brick_H.txt" />
+    <Text Include="Brick_V.txt" />
+    <Text Include="ControlUI.txt" />
+    <Text Include="Door.txt" />
+    <Text Include="Fire.txt" />
+    <Text Include="Jack.txt" />
+    <Text Include="Level1.txt" />
+    <Text Include="Level2.txt" />
+    <Text Include="LostUI.txt" />
+    <Text Include="Mario.txt" />
+    <Text Include="PowerUpBomb.txt" />
+    <Text Include="PowerUpFire.txt" />
+    <Text Include="PowerUpSpeed.txt" />
+    <Text Include="Simon.txt" />
+    <Text Include="WinUI.txt" />
+    <Text Include="Wood.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

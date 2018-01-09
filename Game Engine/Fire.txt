@@ -1,0 +1,10 @@
+Fire
+Transform
+100 100
+Sprite
+FireR.png
+Body
+AABB
+40 40
+Timer
+0.3

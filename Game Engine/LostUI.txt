@@ -1,0 +1,5 @@
+LostUI
+Transform
+400 760
+Sprite
+LostUI.png

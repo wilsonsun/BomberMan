@@ -1,0 +1,8 @@
+Brick_H
+Transform
+0 0
+Sprite
+Brick_H.png
+Body
+AABB
+720 40

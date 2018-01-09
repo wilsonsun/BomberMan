@@ -1,0 +1,8 @@
+Door
+Transform
+0 0
+Sprite
+Door_N.png
+Body
+AABB
+50 50

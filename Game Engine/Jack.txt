@@ -1,0 +1,10 @@
+Jack
+Transform
+100 100
+Sprite
+Jack.png
+Animation
+AI
+Body
+AABB
+40 40

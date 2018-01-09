@@ -1,0 +1,8 @@
+Wood
+Transform
+0 0
+Sprite
+Wood_N.png
+Body
+AABB
+50 50

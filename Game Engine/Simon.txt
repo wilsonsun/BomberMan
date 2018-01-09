@@ -1,0 +1,10 @@
+Simon
+Transform
+100 100
+Sprite
+Simon.png
+UpDown
+Animation
+Body
+AABB
+40 40

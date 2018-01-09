@@ -1,0 +1,8 @@
+Brick_V
+Transform
+0 0
+Sprite
+Brick_V_N.png
+Body
+AABB
+35 720

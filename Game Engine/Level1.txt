@@ -1,0 +1,130 @@
+ControlUI.txt
+400 760
+Door.txt
+720 560
+
+Mario.txt
+70 70
+Simon.txt
+660 400
+Jack.txt
+420 400
+Jack.txt
+500 70
+Jack.txt
+120 550
+
+Brick_H.txt
+400 700
+Brick_H.txt
+400 20
+Brick_V.txt
+25 360
+Brick_V.txt
+775 360
+
+Brick.txt
+120 625
+Brick.txt
+240 625
+Brick.txt
+360 625
+Brick.txt
+480 625
+Brick.txt
+600 625
+Brick.txt
+720 625
+Brick.txt
+120 500
+Brick.txt
+240 500
+Brick.txt
+360 500
+Brick.txt
+480 500
+Brick.txt
+600 500
+Brick.txt
+720 500
+Brick.txt
+120 375
+Brick.txt
+240 375
+Brick.txt
+360 375
+Brick.txt
+480 375
+Brick.txt
+600 375
+Brick.txt
+720 375
+Brick.txt
+120 250
+Brick.txt
+240 250
+Brick.txt
+360 250
+Brick.txt
+480 250
+Brick.txt
+600 250
+Brick.txt
+720 250
+Brick.txt
+120 125
+Brick.txt
+240 125
+Brick.txt
+360 125
+Brick.txt
+480 125
+Brick.txt
+600 125
+Brick.txt
+720 125
+
+Wood.txt
+600 70
+Wood.txt
+600 185
+Wood.txt
+420 70
+Wood.txt
+420 185
+Wood.txt
+420 315
+Wood.txt
+70 550
+Wood.txt
+420 550
+
+Wood.txt
+180 125
+Wood.txt
+300 125
+Wood.txt
+180 70
+Wood.txt
+70 185
+
+Wood.txt
+300 250
+Wood.txt
+180 185
+Wood.txt
+70 250
+
+Wood.txt
+300 315
+Wood.txt
+180 375
+Wood.txt
+70 375
+
+Wood.txt
+180 320
+Wood.txt
+300 445
+Wood.txt
+70 440

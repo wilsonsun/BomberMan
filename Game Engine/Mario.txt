@@ -1,0 +1,10 @@
+Mario
+Transform
+100 100
+Sprite
+Mario.png
+Controller
+Animation
+Body
+AABB
+40 40

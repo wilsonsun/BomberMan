@@ -1,0 +1,8 @@
+Brick
+Transform
+0 0
+Sprite
+Brick.png
+Body
+AABB
+50 50

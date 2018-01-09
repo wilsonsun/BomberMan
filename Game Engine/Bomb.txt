@@ -1,0 +1,10 @@
+Bomb
+Transform
+100 100
+Sprite
+Bomb.png
+Body
+AABB
+40 40
+Explosion
+BombCollider

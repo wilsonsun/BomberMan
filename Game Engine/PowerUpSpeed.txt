@@ -1,0 +1,8 @@
+PowerUpSpeed
+Transform
+0 0
+Sprite
+PowerUpSpeed.png
+Body
+AABB
+45 45

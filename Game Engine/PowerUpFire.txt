@@ -1,0 +1,8 @@
+PowerUpFire
+Transform
+0 0
+Sprite
+PowerUpFire.png
+Body
+AABB
+45 45
